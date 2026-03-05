@@ -1,0 +1,59 @@
+* {
+    margin: 1%;
+    padding: 0px;
+    border-radius: 5px;
+}
+
+    
+
+header{
+    background-color: rgb(223, 34, 97);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    height: 70px;
+}
+nav{
+    background-color: rgb(27, 209, 118);
+    width: 100%;
+}
+aside{
+background-color: pink;
+width: 28%;
+
+}
+main{
+background-color: rgb(157, 211, 241);
+width: 68%;
+}
+footer{
+    background-color: rgb(172, 5, 172);
+    width: 100%;
+}
+article{
+    background-color: rgb(84, 162, 204);
+    padding: 5px;
+}
+section{
+    background-color:rgb(16, 79, 172) ;
+}
+figure{
+    background-color:rgb(234, 236, 99) ;
+
+}
+p{
+    background-color:rgb(255, 255, 0) ;
+}
+@media (max-width: 1044px) {
+aside, main {
+    width: 100%;
+    min-width: auto;
+}
+}
+#container{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+
+}
