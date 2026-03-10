@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(to bottom, #f7be56, 
+#B23B1F);
+    color: #B23B1F;           /* ou o tom de marrom/laranja que você está usando */
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   /* ou center, se quiser centralizar verticalmente também */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    width: 90%;                /* ocupa boa parte em telas pequenas */
+    max-width: 700px;          /* ← aqui está o segredo: limita o tamanho máximo */
+    margin: 30px auto;         /* centraliza + dá espaço em cima/embaixo */
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;           /* a imagem nunca ultrapassa o container */
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto;
+}
+
+h1 {
+    font-family: cursive, "Comic Sans MS", sans-serif; /* ou a fonte que você quer */
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+ul, ol {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 20px;         /* pequeno ajuste visual */
+}
+
+/* Opcional: deixa mais bonito em telas muito grandes */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 750px;      /* ou 800px, teste o que fica melhor pra você */
+        padding: 35px;
+    }
+}
+.imagem img:hover {
+    transform: scale(1.07);
+    transition: transform 0.3s ease;
+}
+
+
