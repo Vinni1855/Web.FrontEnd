@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador De Clique</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Contador de Cliques</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#contador{
+    font-size: 40px;
+    margin: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Contador de Cliques</h1>
+
+<div id="contador">0</div>
+
+<button onclick="contarClique()">Clique em mim</button>
+<button onclick="zerarContador()">Zerar contador</button>
+
+<script>
+let contador = 0;
+
+function contarClique(){
+    contador++;
+    document.getElementById("contador").innerText = contador;
+}
+
+function zerarContador(){
+    contador = 0;
+    document.getElementById("contador").innerText = contador;
+}
+</script>
+
+</body>
+</html>
+</body>
+</html>
